@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON to CSV Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>JSON to CSV Converter</h1>
+
+    <label for="jsonInput">Paste your JSON here:</label>
+    <textarea id="jsonInput" rows="10" placeholder='[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]'></textarea>
+
+    <button onclick="convert()">Convert to CSV</button>
+
+    <label for="csvOutput">CSV Output:</label>
+    <textarea id="csvOutput" rows="10" readonly></textarea>
+    <button onclick="copyCSV()">Copy to Clipboard</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
